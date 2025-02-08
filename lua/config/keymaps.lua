@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "jk", "<ESC>", { noremap = true, silent = true })
+
+vim.keymap.set("i", "<C-l>", "<Right>", { noremap = true, silent = true })
+vim.keymap.set("i", "<C-h>", "<Left>", { noremap = true, silent = true })
