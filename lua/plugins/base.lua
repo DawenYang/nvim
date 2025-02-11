@@ -8,6 +8,7 @@ return {
     end,
   },
   {
+    -- Ctrl-Space is a leader key set for wezterm, hence overriding with the following.
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       opts.incremental_selection = {
