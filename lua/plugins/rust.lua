@@ -44,4 +44,17 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = { ensure_installed = { "rust", "ron" } },
   },
+  {
+    "simrat39/rust-tools.nvim",
+    opts = function()
+      local rt = require("rust-tools")
+      rt.setup({
+        server = {
+          on_attach = function(_, bufnr)
+            vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { buffer = bufnr })
+          end,
+        },
+      })
+    end,
+  },
 }
