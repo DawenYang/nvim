@@ -3,4 +3,4 @@
 -- Add any additional options here
 -- cursor shape to underscore
 vim.opt.guicursor =
-  "n-v-c:block,i-ci:hor30-blinkwait700-blinkon400-blinkoff250,r:hor30-blinkwait700-blinkon400-blinkoff250"
+  "n-v-c:block,i-ci:ver30-blinkwait700-blinkon400-blinkoff250,r:ver30-blinkwait700-blinkon400-blinkoff250"
